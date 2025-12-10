@@ -18,9 +18,12 @@ public:
     int TurnsNumber = 0;
 
     UPROPERTY(EditAnywhere, Category = "creation_trajectoire|Cible")
-    AActor* Actor_cible0; // me permet de choisir un acteur cible           // METTRE LE EDIT ANYWHERE AU DESSOUS DE TOUS
+    AActor* Actor_cible0; // me permet de choisir un acteur cible
+    UPROPERTY(EditAnywhere, Category = "creation_trajectoire|Cible")
     AActor* Actor_cible1; // me permet de choisir un acteur cible
+    UPROPERTY(EditAnywhere, Category = "creation_trajectoire|Cible")
     AActor* Actor_cible2; // me permet de choisir un acteur cible
+    UPROPERTY(EditAnywhere, Category = "creation_trajectoire|Cible")
     AActor* Actor_cible3; // me permet de choisir un acteur cible
 
     UPROPERTY(EditAnywhere, Category = "creation_trajectoire|Speed")

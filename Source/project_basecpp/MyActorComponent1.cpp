@@ -58,11 +58,14 @@ void UMyActorComponent1::ActorMove(float deltatime)
     {
         UE_LOG(LogTemp, Display, TEXT("on est a destination"));
         B_Destination_Reached = true;
+        SetFocus(TurnsNumber);
     }
 }
 
 void UMyActorComponent1::SetFocus(int FocusInt)
 {
+    TurnsNumber++;
+    B_Destination_Reached = false;
     if (FocusInt == 0 && Actor_cible1)
     {
         Vector_cible = Actor_cible1->GetActorLocation();
@@ -74,6 +77,10 @@ void UMyActorComponent1::SetFocus(int FocusInt)
     else if (FocusInt == 2 && Actor_cible3)
     {
         Vector_cible = Actor_cible3->GetActorLocation();
+    }
+    else if (FocusInt == 3 && Actor_cible0)
+    {
+        Vector_cible = Actor_cible0->GetActorLocation();
         TurnsNumber = 0;
     }
 }
