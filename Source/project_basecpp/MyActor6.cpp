@@ -46,7 +46,6 @@ void AMyActor6::distance_resolution()
 			B_Fall_Back = false;
 		}
 	}
-
 	return void();
 }
 
@@ -61,6 +60,5 @@ void AMyActor6::Actor_Move()
 	{
 		AddActorLocalOffset((Direction_vector * platform_speed) * -1);
 	}
-
 }
 

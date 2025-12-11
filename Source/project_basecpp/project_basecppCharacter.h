@@ -92,5 +92,11 @@ public:
 
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Cpp_My_Custom") // Rajout pour activer un event en BP depuis le C++
+	void OnOverlapWithCppActor(float MyFloat); // Rajout pour activer un event en bp depuis le c++ ---- Pas besoin de définir la fonction en cpp !
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Cpp_My_Custom")
+	void JumpPadOnCppActor();
 };
 
